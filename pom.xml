@@ -6,7 +6,11 @@
 
     <groupId>com.sasei</groupId>
     <artifactId>auktion</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>auktion-repository</module>
+    </modules>
 
-    
+
 </project>
