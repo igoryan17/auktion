@@ -1,6 +1,6 @@
 package com.sasei.entities.items;
 
-import com.sasei.entities.users.User;
+import com.sasei.entities.customers.Customer;
 import com.sasei.models.items.ItemsStatus;
 
 import javax.persistence.*;
@@ -19,7 +19,7 @@ public class Item {
     private ItemsStatus status;
     @Column(name = "date_of_the_auction")
     private Date dateOfTheAuction;
-    private User owner;
+    private Customer owner;
 
     public Long getId() {
         return id;
@@ -53,11 +53,11 @@ public class Item {
         this.dateOfTheAuction = dateOfTheAuction;
     }
 
-    public User getOwner() {
+    public Customer getOwner() {
         return owner;
     }
 
-    public void setOwner(User owner) {
+    public void setOwner(Customer owner) {
         this.owner = owner;
     }
 }

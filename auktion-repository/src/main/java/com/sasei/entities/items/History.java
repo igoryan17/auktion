@@ -1,6 +1,6 @@
 package com.sasei.entities.items;
 
-import com.sasei.entities.users.User;
+import com.sasei.entities.customers.Customer;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -14,7 +14,7 @@ public class History {
     private Long currentCost;
     private Long bet;
     private Date time;
-    private User performer;
+    private Customer performer;
 
     public Long getId() {
         return id;
@@ -48,11 +48,11 @@ public class History {
         this.time = time;
     }
 
-    public User getPerformer() {
+    public Customer getPerformer() {
         return performer;
     }
 
-    public void setPerformer(User performer) {
+    public void setPerformer(Customer performer) {
         this.performer = performer;
     }
 }
