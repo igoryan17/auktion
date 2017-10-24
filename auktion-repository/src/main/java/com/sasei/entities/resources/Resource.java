@@ -1,7 +1,6 @@
 package com.sasei.entities.resources;
 
 import com.sasei.models.resources.ResourceType;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
 

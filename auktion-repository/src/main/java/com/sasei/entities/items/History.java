@@ -14,6 +14,7 @@ public class History {
     private Long currentCost;
     private Long bet;
     private Date time;
+    @OneToOne
     private Customer performer;
 
     public Long getId() {

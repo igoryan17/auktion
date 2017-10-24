@@ -13,12 +13,12 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @OneToOne
-    @MapsId
     private ItemCategory itemType;
     @Enumerated(EnumType.STRING)
     private ItemsStatus status;
     @Column(name = "date_of_the_auction")
     private Date dateOfTheAuction;
+    @OneToOne
     private Customer owner;
 
     public Long getId() {

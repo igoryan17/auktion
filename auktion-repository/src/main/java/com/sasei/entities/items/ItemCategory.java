@@ -16,7 +16,9 @@ public class ItemCategory {
     private ItemType itemType;
     @Column(name = "initial_cost")
     private Long initialCost;
+    @OneToOne
     private Resource model;
+    @OneToOne
     private Resource image;
 
     public Long getId() {
